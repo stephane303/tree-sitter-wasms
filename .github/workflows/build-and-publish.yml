@@ -13,6 +13,10 @@ jobs:
           cache: "yarn"
       - run: yarn install
 
+      - uses: mymindstorm/setup-emsdk@v11
+        with:
+          version: 2.0.24
+
       - run: yarn build
 
       - uses: JS-DevTools/npm-publish@v1
