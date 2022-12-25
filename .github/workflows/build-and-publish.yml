@@ -1,10 +1,7 @@
 name: build-and-publish
-on:
-  push:
-    branches:
-      - main
+on: workflow_dispatch
 jobs:
-  build:
+  build-and-publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
