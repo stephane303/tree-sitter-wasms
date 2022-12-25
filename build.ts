@@ -16,13 +16,6 @@ fs.mkdirSync(outDir);
 
 process.chdir(outDir);
 
-const treeSitterCli = path.join(
-  __dirname,
-  "node_modules",
-  ".bin",
-  "tree-sitter"
-);
-
 const grammars = Object.keys(packageInfo.devDependencies).filter(
   (n) =>
     n.startsWith("tree-sitter-") &&
@@ -32,18 +25,24 @@ grammars.push(
   ...["typescript", "tsx"].map((n) => path.join("tree-sitter-typescript", n))
 );
 
+let hasErrors = true;
 const exec = util.promisify(require("child_process").exec);
-
-PromisePool.withConcurrency(os.cpus().length)
+PromisePool.withConcurrency(os.cpus().length * 2)
   .for(grammars)
   .process(async (name) => {
     try {
       console.log(`⏳ Building ${name}`);
       await exec(
-        `${treeSitterCli} build-wasm ${path.join("..", "node_modules", name)}`
+        `yarn tree-sitter build-wasm ${path.join("..", "node_modules", name)}`
       );
       console.log(`✅ Finished building ${name}`);
     } catch (e) {
       console.error(`🔥 Failed to build ${name}:\n`, e);
+      hasErrors = true;
+    }
+  })
+  .then(() => {
+    if (hasErrors) {
+      process.exit(1);
     }
   });

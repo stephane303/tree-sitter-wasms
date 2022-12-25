@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-wasms",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Prebuilt WASM binaries for tree-sitter's language parsers.",
   "repository": "https://github.com/Gregoor/tree-sitter-wasms",
   "author": "Gregor <gregorwbr@gmail.com>, Menci <huanghaorui301@gmail.com>",
@@ -34,7 +34,7 @@
     "tree-sitter-vue": "^0.2.1",
     "tree-sitter-yaml": "^0.5.0",
     "ts-node": "^10.9.1",
-    "typescript": "^4.9.4"
+    "typescript": "4.9.3"
   },
   "files": [
     "/out"
