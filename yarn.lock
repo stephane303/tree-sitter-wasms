@@ -107,6 +107,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/find-root@npm:^1":
+  version: 1.1.2
+  resolution: "@types/find-root@npm:1.1.2"
+  checksum: 658492cc913d30de0bb6cbc1ae8ad70be329f8938cdcc20521f66114464c66c5d14755c2fe7f38bc28230bb769ac6bf35367bdadee0c2275d38e4e99eb652b74
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:^18.11.17":
   version: 18.11.17
   resolution: "@types/node@npm:18.11.17"
@@ -468,6 +475,13 @@ __metadata:
   version: 2.0.3
   resolution: "expand-template@npm:2.0.3"
   checksum: 588c19847216421ed92befb521767b7018dc88f88b0576df98cb242f20961425e96a92cbece525ef28cc5becceae5d544ae0f5b9b5e2aa05acb13716ca5b3099
+  languageName: node
+  linkType: hard
+
+"find-root@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "find-root@npm:1.1.0"
+  checksum: b2a59fe4b6c932eef36c45a048ae8f93c85640212ebe8363164814990ee20f154197505965f3f4f102efc33bfb1cbc26fd17c4a2fc739ebc51b886b137cbefaf
   languageName: node
   linkType: hard
 
@@ -1607,7 +1621,9 @@ __metadata:
   resolution: "tree-sitter-wasms@workspace:."
   dependencies:
     "@supercharge/promise-pool": ^2.3.2
+    "@types/find-root": ^1
     "@types/node": ^18.11.17
+    find-root: ^1.1.0
     tree-sitter-bash: ^0.19.0
     tree-sitter-c: ^0.20.2
     tree-sitter-c-sharp: ^0.20.0

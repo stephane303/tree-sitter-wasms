@@ -29,7 +29,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@supercharge/promise-pool", "npm:2.3.2"],\
+            ["@types/find-root", "npm:1.1.2"],\
             ["@types/node", "npm:18.11.17"],\
+            ["find-root", "npm:1.1.0"],\
             ["tree-sitter-bash", "npm:0.19.0"],\
             ["tree-sitter-c", "npm:0.20.2"],\
             ["tree-sitter-c-sharp", "npm:0.20.0"],\
@@ -178,6 +180,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@tsconfig-node16-npm-1.0.3-6a4a30eda2-3a8b657dd0.zip/node_modules/@tsconfig/node16/",\
           "packageDependencies": [\
             ["@tsconfig/node16", "npm:1.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/find-root", [\
+        ["npm:1.1.2", {\
+          "packageLocation": "./.yarn/cache/@types-find-root-npm-1.1.2-e6719cd303-658492cc91.zip/node_modules/@types/find-root/",\
+          "packageDependencies": [\
+            ["@types/find-root", "npm:1.1.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -608,6 +619,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/expand-template-npm-2.0.3-80de959306-588c198472.zip/node_modules/expand-template/",\
           "packageDependencies": [\
             ["expand-template", "npm:2.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["find-root", [\
+        ["npm:1.1.0", {\
+          "packageLocation": "./.yarn/cache/find-root-npm-1.1.0-a16a94005f-b2a59fe4b6.zip/node_modules/find-root/",\
+          "packageDependencies": [\
+            ["find-root", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1870,7 +1890,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["tree-sitter-wasms", "workspace:."],\
             ["@supercharge/promise-pool", "npm:2.3.2"],\
+            ["@types/find-root", "npm:1.1.2"],\
             ["@types/node", "npm:18.11.17"],\
+            ["find-root", "npm:1.1.0"],\
             ["tree-sitter-bash", "npm:0.19.0"],\
             ["tree-sitter-c", "npm:0.20.2"],\
             ["tree-sitter-c-sharp", "npm:0.20.0"],\
