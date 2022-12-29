@@ -44,6 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tree-sitter-html", "npm:0.19.0"],\
             ["tree-sitter-java", "npm:0.19.1"],\
             ["tree-sitter-javascript", "npm:0.19.0"],\
+            ["tree-sitter-json", "npm:0.20.0"],\
             ["tree-sitter-lua", "npm:2.1.3"],\
             ["tree-sitter-php", "npm:0.19.0"],\
             ["tree-sitter-python", "npm:0.20.1"],\
@@ -1785,6 +1786,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["tree-sitter-json", [\
+        ["npm:0.20.0", {\
+          "packageLocation": "./.yarn/unplugged/tree-sitter-json-npm-0.20.0-63d4c1a4f3/node_modules/tree-sitter-json/",\
+          "packageDependencies": [\
+            ["tree-sitter-json", "npm:0.20.0"],\
+            ["nan", "npm:2.17.0"],\
+            ["node-gyp", "npm:9.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["tree-sitter-lua", [\
         ["npm:2.1.3", {\
           "packageLocation": "./.yarn/unplugged/tree-sitter-lua-npm-2.1.3-4394873ed2/node_modules/tree-sitter-lua/",\
@@ -1905,6 +1917,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tree-sitter-html", "npm:0.19.0"],\
             ["tree-sitter-java", "npm:0.19.1"],\
             ["tree-sitter-javascript", "npm:0.19.0"],\
+            ["tree-sitter-json", "npm:0.20.0"],\
             ["tree-sitter-lua", "npm:2.1.3"],\
             ["tree-sitter-php", "npm:0.19.0"],\
             ["tree-sitter-python", "npm:0.20.1"],\
