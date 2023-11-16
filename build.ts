@@ -54,7 +54,7 @@ const grammars = Object.keys(packageInfo.devDependencies).filter(
 );
 
 PromisePool.withConcurrency(os.cpus().length)
-  .for(["tree-sitter-rescript"] || grammars)
+  .for(grammars)
   .process(async (name) => {
     if (name == "tree-sitter-rescript") {
       await buildParserWASM(name, { generate: true });
