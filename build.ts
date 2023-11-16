@@ -29,8 +29,7 @@ async function buildParserWASM(
     if (generate) {
       await exec(`pnpm tree-sitter generate`, { cwd });
     }
-    await exec(`pnpm tree-sitter build-wasm`, { cwd });
-    await exec(`cp *.wasm ${__dirname}`, { cwd });
+    await exec(`pnpm tree-sitter build-wasm ${cwd}`);
 
     console.log(`✅ Finished building ${label}`);
   } catch (e) {
