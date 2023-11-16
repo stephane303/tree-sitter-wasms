@@ -6,18 +6,18 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install Node.js with Yarn
+      - name: Install Node.js with pnpm
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: "yarn"
-      - run: yarn install
+          cache: "pnpm"
+      - run: pnpm install
 
       - uses: mymindstorm/setup-emsdk@v11
         with:
           version: 2.0.24
 
-      - run: yarn build
+      - run: pnpm build
 
       - uses: JS-DevTools/npm-publish@v1
         with:

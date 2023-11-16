@@ -8,18 +8,30 @@ const findRoot = require("find-root");
 
 import packageInfo from "./package.json";
 
+const exec = util.promisify(require("child_process").exec);
+
 let hasErrors = false;
 
-async function buildParserWASM(name: string, subPath?: string) {
+async function buildParserWASM(
+  name: string,
+  { subPath, generate }: { subPath?: string; generate?: boolean } = {}
+) {
   const label = subPath ? path.join(name, subPath) : name;
   try {
     console.log(`⏳ Building ${label}`);
-    const packagePath = findRoot(require.resolve(name));
-    await exec(
-      `yarn tree-sitter build-wasm ${
-        subPath ? path.join(packagePath, subPath) : packagePath
-      }`
-    );
+    let packagePath;
+    try {
+      packagePath = findRoot(require.resolve(name));
+    } catch (_) {
+      packagePath = path.join(__dirname, "node_modules", name);
+    }
+    const cwd = subPath ? path.join(packagePath, subPath) : packagePath;
+    if (generate) {
+      await exec(`pnpm tree-sitter generate`, { cwd });
+    }
+    await exec(`pnpm tree-sitter build-wasm`, { cwd });
+    await exec(`cp *.wasm ${__dirname}`, { cwd });
+
     console.log(`✅ Finished building ${label}`);
   } catch (e) {
     console.error(`🔥 Failed to build ${label}:\n`, e);
@@ -41,13 +53,14 @@ const grammars = Object.keys(packageInfo.devDependencies).filter(
   (n) => n.startsWith("tree-sitter-") && n !== "tree-sitter-cli"
 );
 
-const exec = util.promisify(require("child_process").exec);
 PromisePool.withConcurrency(os.cpus().length)
-  .for(grammars)
+  .for(["tree-sitter-rescript"] || grammars)
   .process(async (name) => {
-    if (name == "tree-sitter-typescript") {
-      await buildParserWASM(name, "typescript");
-      await buildParserWASM(name, "tsx");
+    if (name == "tree-sitter-rescript") {
+      await buildParserWASM(name, { generate: true });
+    } else if (name == "tree-sitter-typescript") {
+      await buildParserWASM(name, { subPath: "typescript" });
+      await buildParserWASM(name, { subPath: "tsx" });
     } else {
       await buildParserWASM(name);
     }
