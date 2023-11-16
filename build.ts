@@ -10,6 +10,8 @@ import packageInfo from "./package.json";
 
 const exec = util.promisify(require("child_process").exec);
 
+const outDir = path.join(__dirname, "out");
+
 let hasErrors = false;
 
 async function buildParserWASM(
@@ -30,15 +32,12 @@ async function buildParserWASM(
       await exec(`pnpm tree-sitter generate`, { cwd });
     }
     await exec(`pnpm tree-sitter build-wasm ${cwd}`);
-
     console.log(`✅ Finished building ${label}`);
   } catch (e) {
     console.error(`🔥 Failed to build ${label}:\n`, e);
     hasErrors = true;
   }
 }
-
-const outDir = path.join(__dirname, "out");
 
 if (fs.existsSync(outDir)) {
   fs.rmSync(outDir, { recursive: true, force: true });
@@ -64,8 +63,9 @@ PromisePool.withConcurrency(os.cpus().length)
       await buildParserWASM(name);
     }
   })
-  .then(() => {
+  .then(async () => {
     if (hasErrors) {
       process.exit(1);
     }
+    await exec(`mv *.wasm ${outDir}`, { cwd: __dirname });
   });
