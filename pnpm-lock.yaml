@@ -9,11 +9,11 @@ devDependencies:
     specifier: ^3.1.0
     version: 3.1.0
   '@types/find-root':
-    specifier: ^1
+    specifier: ^1.1.4
     version: 1.1.4
   '@types/node':
-    specifier: ^20.9.0
-    version: 20.9.0
+    specifier: ^20.10.7
+    version: 20.10.7
   find-root:
     specifier: ^1.1.0
     version: 1.1.0
@@ -35,8 +35,14 @@ devDependencies:
   tree-sitter-css:
     specifier: ^0.19.0
     version: 0.19.0
+  tree-sitter-elisp:
+    specifier: ^1.3.0
+    version: 1.3.0
+  tree-sitter-elixir:
+    specifier: ^0.1.1
+    version: 0.1.1
   tree-sitter-elm:
-    specifier: ^4.3.4
+    specifier: ^4.5.0
     version: 4.5.0
   tree-sitter-embedded-template:
     specifier: ^0.20.0
@@ -54,17 +60,23 @@ devDependencies:
     specifier: ^0.20.1
     version: 0.20.1
   tree-sitter-json:
-    specifier: ^0.20.0
+    specifier: ^0.20.1
     version: 0.20.1
   tree-sitter-lua:
     specifier: ^2.1.3
     version: 2.1.3
+  tree-sitter-ocaml:
+    specifier: ^0.20.4
+    version: 0.20.4
   tree-sitter-php:
     specifier: ^0.19.0
     version: 0.19.0
   tree-sitter-python:
     specifier: ^0.20.4
     version: 0.20.4
+  tree-sitter-ql:
+    specifier: ^1.0.0
+    version: 1.0.0
   tree-sitter-rescript:
     specifier: github:nkrkv/tree-sitter-rescript#6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a
     version: github.com/nkrkv/tree-sitter-rescript/6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a
@@ -90,8 +102,8 @@ devDependencies:
     specifier: ^0.5.0
     version: 0.5.0
   ts-node:
-    specifier: ^10.9.1
-    version: 10.9.1(@types/node@20.9.0)(typescript@5.2.2)
+    specifier: ^10.9.2
+    version: 10.9.2(@types/node@20.10.7)(typescript@5.2.2)
   typescript:
     specifier: 5.2.2
     version: 5.2.2
@@ -105,20 +117,20 @@ packages:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
 
-  /@jridgewell/resolve-uri@3.1.0:
-    resolution: {integrity: sha512-F2msla3tad+Mfht5cJq7LSXcdudKTWCVYUgw6pLFOOHSTtZlj6SWNYAp+AhuqLmWdBO2X5hPrLcu8cVP8fy28w==}
+  /@jridgewell/resolve-uri@3.1.1:
+    resolution: {integrity: sha512-dSYZh7HhCDtCKm4QakX0xFpsRDqjjtZf/kjI/v3T3Nwt5r8/qz/M19F9ySyOqU94SXBmeG9ttTul+YnR4LOxFA==}
     engines: {node: '>=6.0.0'}
     dev: true
 
-  /@jridgewell/sourcemap-codec@1.4.14:
-    resolution: {integrity: sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==}
+  /@jridgewell/sourcemap-codec@1.4.15:
+    resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
     dev: true
 
   /@jridgewell/trace-mapping@0.3.9:
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
     dependencies:
-      '@jridgewell/resolve-uri': 3.1.0
-      '@jridgewell/sourcemap-codec': 1.4.14
+      '@jridgewell/resolve-uri': 3.1.1
+      '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
   /@supercharge/promise-pool@3.1.0:
@@ -138,27 +150,27 @@ packages:
     resolution: {integrity: sha512-ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoYlM2nc6388Fq5jcXyr5mRsqViLx/GJYdoL0bfXD8nmF+Zn/Iow==}
     dev: true
 
-  /@tsconfig/node16@1.0.3:
-    resolution: {integrity: sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==}
+  /@tsconfig/node16@1.0.4:
+    resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
     dev: true
 
   /@types/find-root@1.1.4:
     resolution: {integrity: sha512-2EXK/+gVhVgtt4JqThbEncORvpYJKzi9tQGmI3EkU2jTgMzQsrPm/hbd5xe5uPdeFzIW5gh2PRvvPjaUsI8vpg==}
     dev: true
 
-  /@types/node@20.9.0:
-    resolution: {integrity: sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==}
+  /@types/node@20.10.7:
+    resolution: {integrity: sha512-fRbIKb8C/Y2lXxB5eVMj4IU7xpdox0Lh8bUPEdtLysaylsml1hOOx1+STloRs/B9nf7C6kPRmmg/V7aQW7usNg==}
     dependencies:
       undici-types: 5.26.5
     dev: true
 
-  /acorn-walk@8.2.0:
-    resolution: {integrity: sha512-k+iyHEuPgSw6SbuDpGQM+06HQUa04DZ3o+F6CSzXMvvI5KMvnaEqXe+YVe555R9nn6GPt404fos4wcgpw12SDA==}
+  /acorn-walk@8.3.1:
+    resolution: {integrity: sha512-TgUZgYvqZprrl7YldZNoa9OciCAyZR+Ejm9eXzKCmjsF5IKp/wgQ7Z/ZpjpGTIUPwrHQIcYeI8qDh4PsEwxMbw==}
     engines: {node: '>=0.4.0'}
     dev: true
 
-  /acorn@8.8.1:
-    resolution: {integrity: sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==}
+  /acorn@8.11.3:
+    resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
@@ -176,7 +188,7 @@ packages:
     resolution: {integrity: sha512-nxwy40TuMiUGqMyRHgCSWZ9FM4VAoRP4xUYSTv5ImRog+h9yISPbVH7H8fASCIzYn9wlEv4zvFL7uKDMCFQm3g==}
     dependencies:
       delegates: 1.0.0
-      readable-stream: 2.3.7
+      readable-stream: 2.3.8
     dev: true
 
   /arg@4.1.3:
@@ -192,7 +204,7 @@ packages:
     dependencies:
       buffer: 5.7.1
       inherits: 2.0.4
-      readable-stream: 3.6.0
+      readable-stream: 3.6.2
     dev: true
 
   /buffer@5.7.1:
@@ -295,7 +307,7 @@ packages:
     dev: true
 
   /github-from-package@0.0.0:
-    resolution: {integrity: sha1-l/tdlr/eiXMxPyDoKI75oWf6ZM4=}
+    resolution: {integrity: sha512-SyHy3T1v2NUXn29OsWdxmK6RwHD+vkj3v8en8AOBZ1wBQ/hCAQ5bAQTD02kW4W9tUp/3Qh6J8r9EvntiyCmOOw==}
     dev: true
 
   /has-unicode@2.0.1:
@@ -346,20 +358,12 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /minimist@1.2.7:
-    resolution: {integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==}
-    dev: true
-
   /minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
     dev: true
 
   /mkdirp-classic@0.5.3:
     resolution: {integrity: sha512-gKLcREMhtuZRwRAfqP3RFW+TK4JqApVBtOIftVgjuABpAtpxhPGaDcfvbhNvD0B8iD1oUr/txX35NjcaY6Ns/A==}
-    dev: true
-
-  /nan@2.17.0:
-    resolution: {integrity: sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ==}
     dev: true
 
   /nan@2.18.0:
@@ -373,11 +377,11 @@ packages:
   /node-abi@2.30.1:
     resolution: {integrity: sha512-/2D0wOQPgaUWzVSVgRMx+trKJRC2UG4SUc4oCJoXx9Uxjtp0Vy3/kt7zcbxHF8+Z/pK3UloLWzBISg72brfy1w==}
     dependencies:
-      semver: 5.7.1
+      semver: 5.7.2
     dev: true
 
-  /node-abi@3.51.0:
-    resolution: {integrity: sha512-SQkEP4hmNWjlniS5zdnfIXTk1x7Ome85RDzHlTbBtzE97Gfwz/Ipw4v/Ryk20DWIy3yCNVLVlGKApCnmvYoJbA==}
+  /node-abi@3.54.0:
+    resolution: {integrity: sha512-p7eGEiQil0YUV3ItH4/tBb781L5impVmmx2E9FRKF7d18XXzp4PGT2tdYMFY6wQqgxD0IwNZOiSJ0/K0fSi/OA==}
     engines: {node: '>=10'}
     dependencies:
       semver: 7.5.4
@@ -420,7 +424,7 @@ packages:
       detect-libc: 1.0.3
       expand-template: 2.0.3
       github-from-package: 0.0.0
-      minimist: 1.2.7
+      minimist: 1.2.8
       mkdirp-classic: 0.5.3
       napi-build-utils: 1.0.2
       node-abi: 2.30.1
@@ -442,7 +446,7 @@ packages:
       detect-libc: 1.0.3
       expand-template: 2.0.3
       github-from-package: 0.0.0
-      minimist: 1.2.7
+      minimist: 1.2.8
       mkdirp-classic: 0.5.3
       napi-build-utils: 1.0.2
       node-abi: 2.30.1
@@ -465,7 +469,7 @@ packages:
       minimist: 1.2.8
       mkdirp-classic: 0.5.3
       napi-build-utils: 1.0.2
-      node-abi: 3.51.0
+      node-abi: 3.54.0
       pump: 3.0.0
       rc: 1.2.8
       simple-get: 4.0.1
@@ -490,12 +494,12 @@ packages:
     dependencies:
       deep-extend: 0.6.0
       ini: 1.3.8
-      minimist: 1.2.7
+      minimist: 1.2.8
       strip-json-comments: 2.0.1
     dev: true
 
-  /readable-stream@2.3.7:
-    resolution: {integrity: sha512-Ebho8K4jIbHAxnuxi7o42OrZgF/ZTNcsZj6nRKyUmkhLFq8CHItp/fy6hQZuZmP/n3yZ9VBUbp4zz/mX8hmYPw==}
+  /readable-stream@2.3.8:
+    resolution: {integrity: sha512-8p0AUk4XODgIewSi0l8Epjs+EVnWiK7NoDIEGU0HhE7+ZyY8D1IMY7odu5lRrFXGg71L15KG8QrPmum45RTtdA==}
     dependencies:
       core-util-is: 1.0.3
       inherits: 2.0.4
@@ -506,8 +510,8 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /readable-stream@3.6.0:
-    resolution: {integrity: sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==}
+  /readable-stream@3.6.2:
+    resolution: {integrity: sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA==}
     engines: {node: '>= 6'}
     dependencies:
       inherits: 2.0.4
@@ -523,8 +527,8 @@ packages:
     resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
     dev: true
 
-  /semver@5.7.1:
-    resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}
+  /semver@5.7.2:
+    resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
     hasBin: true
     dev: true
 
@@ -614,7 +618,7 @@ packages:
       end-of-stream: 1.4.4
       fs-constants: 1.0.0
       inherits: 2.0.4
-      readable-stream: 3.6.0
+      readable-stream: 3.6.2
     dev: true
 
   /tree-sitter-bash@0.20.3:
@@ -630,7 +634,7 @@ packages:
     resolution: {integrity: sha512-HOR6fQtghA7hp/LC6fQzzCyRv8TINh/hqYUULYHOYmwsCV73j4PHLYg1536qv/vff1KaRd7Qx3Fs3VLzx1/WIQ==}
     requiresBuild: true
     dependencies:
-      nan: 2.17.0
+      nan: 2.18.0
     dev: true
 
   /tree-sitter-c@0.20.6:
@@ -657,14 +661,28 @@ packages:
     resolution: {integrity: sha512-LYCHS1V2bzeNJr8Mgh60H06qB8NNJyRJVgW1gKCEjcm5S48d8H9xOnrzIlsyLHaXFfnGWCrHJ6jxN6G3s5fJTA==}
     requiresBuild: true
     dependencies:
-      nan: 2.17.0
+      nan: 2.18.0
+    dev: true
+
+  /tree-sitter-elisp@1.3.0:
+    resolution: {integrity: sha512-6j8RmhyvmUbAev3/rqRyBf1MTmAbKWA/ggdWRXxC04DD+r+gvrJ8o7xDpiBurvdXTbsuL21SZ2VvBm7Usp334w==}
+    requiresBuild: true
+    dependencies:
+      nan: 2.18.0
+    dev: true
+
+  /tree-sitter-elixir@0.1.1:
+    resolution: {integrity: sha512-w/9KU1uBTSQgiSHQcEISguKKx2mG7ZJ+2VMUMMmGDkCPD0X94zHulJ1qlUqM8r7Uwc6rMaRVIP5ekRD2q18C8g==}
+    requiresBuild: true
+    dependencies:
+      nan: 2.18.0
     dev: true
 
   /tree-sitter-elm@4.5.0:
     resolution: {integrity: sha512-GNUKjhOQCiARkQLPEmeYYugbQtuEAdy1uZyoQbQnXXsmKM4apCXpJsd9F9ExwCsq2s40PXD2y+wLUnH17BBkkg==}
     requiresBuild: true
     dependencies:
-      nan: 2.17.0
+      nan: 2.18.0
       prebuild-install: 6.1.4
     dev: true
 
@@ -672,7 +690,7 @@ packages:
     resolution: {integrity: sha512-b6H7jqT+dFSZThH6eS27UKr5hoJY/dxK2+C/B63Kbjo8HN2b56ScNzN5/TroMrXpxd3MuWJt7x/MQ3+WajpJHw==}
     requiresBuild: true
     dependencies:
-      nan: 2.17.0
+      nan: 2.18.0
     dev: true
 
   /tree-sitter-go@0.20.0:
@@ -714,14 +732,21 @@ packages:
     resolution: {integrity: sha512-BmRSRI0Y4J47cE2cODyXsPiueDSAnIrFLJqOP/gKIJhGa4HoGpvEccmNuhAEVGtCrgaHGhaIkWeqiMGCgQ0cfw==}
     requiresBuild: true
     dependencies:
-      nan: 2.17.0
+      nan: 2.18.0
+    dev: true
+
+  /tree-sitter-ocaml@0.20.4:
+    resolution: {integrity: sha512-k8w2yQwSY1j8LZQmfrSgs8/P6+Nair67JHhysW5Sgfr4SGIq4tqkQnHnZAG0vVo1vsHslGvYRiaYsUSros8p+Q==}
+    requiresBuild: true
+    dependencies:
+      nan: 2.18.0
     dev: true
 
   /tree-sitter-php@0.19.0:
     resolution: {integrity: sha512-YchOF4ai+CIP8AMHuNDohEOG4T+9+6YwVqyNwWS9+BIBze41D32V9FCc88/v4W5YRvvCdRqJk8V+hWtnCHrUcw==}
     requiresBuild: true
     dependencies:
-      nan: 2.17.0
+      nan: 2.18.0
     dev: true
 
   /tree-sitter-python@0.20.4:
@@ -731,11 +756,18 @@ packages:
       nan: 2.18.0
     dev: true
 
+  /tree-sitter-ql@1.0.0:
+    resolution: {integrity: sha512-szoPLBjGhtjaEBCJBB6BM5IX5ypYF9U1S6HT6QDS5MJs1jwxS8tVqk2HJOIo5SChZR6Tgt+kiHJARzL07Jc6Lg==}
+    requiresBuild: true
+    dependencies:
+      nan: 2.18.0
+    dev: true
+
   /tree-sitter-ruby@0.19.0:
     resolution: {integrity: sha512-uzASkTuC6wXnnshfDgij/Q9FYWxODCyIKVb0eHVGX9G5Cu5iFPvgJQgWTKIft1zomTjKjD25YIwFUnXnzZf4Ew==}
     requiresBuild: true
     dependencies:
-      nan: 2.17.0
+      nan: 2.18.0
       prebuild-install: 5.3.6
     dev: true
 
@@ -750,14 +782,14 @@ packages:
     resolution: {integrity: sha512-y4QfkzeYxxV/vVLnANlC19noCxPZQRF9AxCPEER8xJhMl4WTAGuc0kqn5LbI4VS547nmM8TMzDYti8vNcZUExw==}
     requiresBuild: true
     dependencies:
-      nan: 2.17.0
+      nan: 2.18.0
     dev: true
 
   /tree-sitter-toml@0.5.1:
     resolution: {integrity: sha512-ymaN/Lno2tqTPEuKOOdu4IoqISaL8MWRQGp1/+2yqVAcw9PSBh5diCkoOwumHYv00grzDmY5hUtuairQ68hVkQ==}
     requiresBuild: true
     dependencies:
-      nan: 2.17.0
+      nan: 2.18.0
     dev: true
 
   /tree-sitter-typescript@0.20.3:
@@ -771,18 +803,18 @@ packages:
     resolution: {integrity: sha512-Uy6/ih87qJfoID5Z45Mb3qBqMuFfhnN5u6Ujgrmi/D6SyFIoZSZTAV97yxsejXFdcn4Vw3/XO+agk7ztIdhJLw==}
     requiresBuild: true
     dependencies:
-      nan: 2.17.0
+      nan: 2.18.0
     dev: true
 
   /tree-sitter-yaml@0.5.0:
     resolution: {integrity: sha512-POJ4ZNXXSWIG/W4Rjuyg36MkUD4d769YRUGKRqN+sVaj/VCo6Dh6Pkssn1Rtewd5kybx+jT1BWMyWN0CijXnMA==}
     requiresBuild: true
     dependencies:
-      nan: 2.17.0
+      nan: 2.18.0
     dev: true
 
-  /ts-node@10.9.1(@types/node@20.9.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
+  /ts-node@10.9.2(@types/node@20.10.7)(typescript@5.2.2):
+    resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==}
     hasBin: true
     peerDependencies:
       '@swc/core': '>=1.2.50'
@@ -799,10 +831,10 @@ packages:
       '@tsconfig/node10': 1.0.9
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
-      '@tsconfig/node16': 1.0.3
-      '@types/node': 20.9.0
-      acorn: 8.8.1
-      acorn-walk: 8.2.0
+      '@tsconfig/node16': 1.0.4
+      '@types/node': 20.10.7
+      acorn: 8.11.3
+      acorn-walk: 8.3.1
       arg: 4.1.3
       create-require: 1.1.1
       diff: 4.0.2
