@@ -71,9 +71,6 @@ devDependencies:
   tree-sitter-lua:
     specifier: ^2.1.3
     version: 2.1.3
-  tree-sitter-markdown:
-    specifier: ^0.7.1
-    version: 0.7.1
   tree-sitter-objc:
     specifier: ^2.1.0
     version: 2.1.0
@@ -1325,13 +1322,6 @@ packages:
 
   /tree-sitter-lua@2.1.3:
     resolution: {integrity: sha512-BmRSRI0Y4J47cE2cODyXsPiueDSAnIrFLJqOP/gKIJhGa4HoGpvEccmNuhAEVGtCrgaHGhaIkWeqiMGCgQ0cfw==}
-    requiresBuild: true
-    dependencies:
-      nan: 2.18.0
-    dev: true
-
-  /tree-sitter-markdown@0.7.1:
-    resolution: {integrity: sha512-hB3sEm1JtfoRUzGvknL9RQrS/LJvbrdI9WfGbU8gE6xMjbbAKHfHrNzh4Oo9JxksfUf6UEMxy91acRajEIOnGQ==}
     requiresBuild: true
     dependencies:
       nan: 2.18.0
