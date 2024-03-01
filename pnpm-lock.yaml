@@ -12,8 +12,11 @@ devDependencies:
     specifier: ^1.1.4
     version: 1.1.4
   '@types/node':
-    specifier: ^20.11.24
+    specifier: ^20.11.17
     version: 20.11.24
+  '@willjouo/tree-sitter-r':
+    specifier: ^0.0.1
+    version: 0.0.1
   find-root:
     specifier: ^1.1.0
     version: 1.1.0
@@ -21,16 +24,16 @@ devDependencies:
     specifier: ^0.20.5
     version: 0.20.5
   tree-sitter-c:
-    specifier: ^0.20.8
+    specifier: ^0.20.7
     version: 0.20.8
   tree-sitter-c-sharp:
     specifier: ^0.20.0
     version: 0.20.0
   tree-sitter-cli:
-    specifier: ^0.21.0
-    version: 0.21.0
+    specifier: ^0.20.8
+    version: 0.20.8
   tree-sitter-cpp:
-    specifier: ^0.20.5
+    specifier: ^0.20.4
     version: 0.20.5
   tree-sitter-css:
     specifier: ^0.20.0
@@ -51,7 +54,7 @@ devDependencies:
     specifier: ^0.20.0
     version: 0.20.0
   tree-sitter-html:
-    specifier: ^0.20.1
+    specifier: ^0.20.0
     version: 0.20.1
   tree-sitter-java:
     specifier: ^0.20.2
@@ -62,14 +65,23 @@ devDependencies:
   tree-sitter-json:
     specifier: ^0.20.2
     version: 0.20.2
+  tree-sitter-kotlin:
+    specifier: ^0.3.1
+    version: 0.3.1
   tree-sitter-lua:
     specifier: ^2.1.3
     version: 2.1.3
+  tree-sitter-markdown:
+    specifier: ^0.7.1
+    version: 0.7.1
+  tree-sitter-objc:
+    specifier: ^2.1.0
+    version: 2.1.0
   tree-sitter-ocaml:
     specifier: ^0.20.4
     version: 0.20.4
   tree-sitter-php:
-    specifier: ^0.22.2
+    specifier: ^0.22.0
     version: 0.22.2
   tree-sitter-python:
     specifier: ^0.20.4
@@ -86,6 +98,12 @@ devDependencies:
   tree-sitter-rust:
     specifier: ^0.20.4
     version: 0.20.4
+  tree-sitter-scala:
+    specifier: ^0.19.0
+    version: 0.19.0
+  tree-sitter-swift:
+    specifier: ^0.4.0
+    version: 0.4.0
   tree-sitter-systemrdl:
     specifier: ^0.7.0
     version: 0.7.0
@@ -201,6 +219,13 @@ packages:
     resolution: {integrity: sha512-Kza43ewS3xoLgCEpQrsT+xRo/EJej1y0kVYGiLFE1NEODXGzTfwiC6tXTLMQskn1X4/Rjlh0MQUvx9W+L9long==}
     dependencies:
       undici-types: 5.26.5
+    dev: true
+
+  /@willjouo/tree-sitter-r@0.0.1:
+    resolution: {integrity: sha512-v27CQTTVYow3wZJV6sJI1tqbMU8EtK5Bd47WjSvMcX7UnLJq4nY7sa1wgiBz5ds47Myfws25gPSGeyq7h/Gy9A==}
+    requiresBuild: true
+    dependencies:
+      nan: 2.18.0
     dev: true
 
   /abbrev@2.0.0:
@@ -1201,8 +1226,14 @@ packages:
       nan: 2.18.0
     dev: true
 
-  /tree-sitter-cli@0.21.0:
-    resolution: {integrity: sha512-wA7wT5724fNQW82XDH6zT6ZcYonjrAKLCHHuhLsPcAKULrhp3rNuMvlgBdB5FUBvmjHNhtTZF/qpHenMoRJPBw==}
+  /tree-sitter-cli@0.20.6:
+    resolution: {integrity: sha512-tjbAeuGSMhco/EnsThjWkQbDIYMDmdkWsTPsa/NJAW7bjaki9P7oM9TkLxfdlnm4LXd1wR5wVSM2/RTLtZbm6A==}
+    hasBin: true
+    requiresBuild: true
+    dev: true
+
+  /tree-sitter-cli@0.20.8:
+    resolution: {integrity: sha512-XjTcS3wdTy/2cc/ptMLc/WRyOLECRYcMTrSWyhZnj1oGSOWbHLTklgsgRICU3cPfb0vy+oZCC33M43u6R1HSCA==}
     hasBin: true
     requiresBuild: true
     dev: true
@@ -1285,8 +1316,29 @@ packages:
       nan: 2.18.0
     dev: true
 
+  /tree-sitter-kotlin@0.3.1:
+    resolution: {integrity: sha512-mSm1H7FBwJ3D8gtYdQ6ptSY6spIo7UvHWx8zdmrWthn+g8lcMKJ9LD3N4xVnbBmisdVtU/8g0oFpkuAWFsxAMA==}
+    requiresBuild: true
+    dependencies:
+      nan: 2.18.0
+    dev: true
+
   /tree-sitter-lua@2.1.3:
     resolution: {integrity: sha512-BmRSRI0Y4J47cE2cODyXsPiueDSAnIrFLJqOP/gKIJhGa4HoGpvEccmNuhAEVGtCrgaHGhaIkWeqiMGCgQ0cfw==}
+    requiresBuild: true
+    dependencies:
+      nan: 2.18.0
+    dev: true
+
+  /tree-sitter-markdown@0.7.1:
+    resolution: {integrity: sha512-hB3sEm1JtfoRUzGvknL9RQrS/LJvbrdI9WfGbU8gE6xMjbbAKHfHrNzh4Oo9JxksfUf6UEMxy91acRajEIOnGQ==}
+    requiresBuild: true
+    dependencies:
+      nan: 2.18.0
+    dev: true
+
+  /tree-sitter-objc@2.1.0:
+    resolution: {integrity: sha512-qAeeaZS5sYSB8JYoKpE8GbvtUQFZqDckegU4ntVtpdQPLffjF/6ANgzqbXPWl9YaK2WBZtBFeRF7OPvh7nIErA==}
     requiresBuild: true
     dependencies:
       nan: 2.18.0
@@ -1336,6 +1388,22 @@ packages:
     requiresBuild: true
     dependencies:
       nan: 2.18.0
+    dev: true
+
+  /tree-sitter-scala@0.19.0:
+    resolution: {integrity: sha512-PALw1LDNvMv/OdrHq5DD5eR7NULa7Lh/CqKCVRtL7ohc4I3E7cO5TkPaBc49MImHbUlpBKxIbH7KDdOyWAVkkg==}
+    requiresBuild: true
+    dependencies:
+      nan: 2.18.0
+    dev: true
+
+  /tree-sitter-swift@0.4.0:
+    resolution: {integrity: sha512-Wbul0z6fLSnl+uPhgK+yVK5IbdvugrVnIaRyS2xQ7zaFdExRw1WRvxrXyvurNVqk1VT1AGNFK7A/h1HPwSnIXQ==}
+    requiresBuild: true
+    dependencies:
+      nan: 2.18.0
+      tree-sitter-cli: 0.20.6
+      which: 2.0.2
     dev: true
 
   /tree-sitter-systemrdl@0.7.0:
