@@ -34,7 +34,7 @@
     "tree-sitter-objc": "^2.1.0",
     "tree-sitter-ocaml": "^0.22.0",
     "tree-sitter-php": "^0.22.0",
-    "tree-sitter-python": "^0.20.4",
+    "tree-sitter-python": "^0.21.0",
     "tree-sitter-ql": "^1.0.0",
     "tree-sitter-rescript": "github:nkrkv/tree-sitter-rescript#6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a",
     "tree-sitter-ruby": "^0.20.1",

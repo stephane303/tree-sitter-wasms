@@ -84,8 +84,8 @@ devDependencies:
     specifier: ^0.22.0
     version: 0.22.2
   tree-sitter-python:
-    specifier: ^0.20.4
-    version: 0.20.4
+    specifier: ^0.21.0
+    version: 0.21.0(tree-sitter@0.21.0)
   tree-sitter-ql:
     specifier: ^1.0.0
     version: 1.0.0
@@ -1375,11 +1375,19 @@ packages:
       nan: 2.18.0
     dev: true
 
-  /tree-sitter-python@0.20.4:
-    resolution: {integrity: sha512-F+94q/t9+4J5yaQnmfAqEf4OZFjuhuyniRtb9P2jPaBwHrbyJL44RKFALovZxhF0syLFKpTQ7ODywyiGeB1YMg==}
+  /tree-sitter-python@0.21.0(tree-sitter@0.21.0):
+    resolution: {integrity: sha512-IUKx7JcTVbByUx1iHGFS/QsIjx7pqwTMHL9bl/NGyhyyydbfNrpruo2C7W6V4KZrbkkCOlX8QVrCoGOFW5qecg==}
     requiresBuild: true
+    peerDependencies:
+      tree-sitter: ^0.21.0
+      tree_sitter: '*'
+    peerDependenciesMeta:
+      tree_sitter:
+        optional: true
     dependencies:
-      nan: 2.18.0
+      node-addon-api: 7.1.0
+      node-gyp-build: 4.8.0
+      tree-sitter: 0.21.0
     dev: true
 
   /tree-sitter-ql@1.0.0:
