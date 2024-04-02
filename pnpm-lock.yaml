@@ -101,6 +101,9 @@ devDependencies:
   tree-sitter-scala:
     specifier: ^0.19.0
     version: 0.19.0
+  tree-sitter-solidity:
+    specifier: github:JoranHonig/tree-sitter-solidity#b239a95f94cfcc6e7b3e961bc73a28d55e214f02
+    version: github.com/JoranHonig/tree-sitter-solidity/b239a95f94cfcc6e7b3e961bc73a28d55e214f02
   tree-sitter-swift:
     specifier: ^0.4.0
     version: 0.4.0
@@ -1571,9 +1574,26 @@ packages:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
     dev: true
 
+  /yarn@1.22.22:
+    resolution: {integrity: sha512-prL3kGtyG7o9Z9Sv8IPfBNrWTDmXB4Qbes8A9rEzt6wkJV8mUvoirjU0Mp3GGAU06Y0XQyA3/2/RQFVuK7MTfg==}
+    engines: {node: '>=4.0.0'}
+    hasBin: true
+    requiresBuild: true
+    dev: true
+
   /yn@3.1.1:
     resolution: {integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==}
     engines: {node: '>=6'}
+    dev: true
+
+  github.com/JoranHonig/tree-sitter-solidity/b239a95f94cfcc6e7b3e961bc73a28d55e214f02:
+    resolution: {tarball: https://codeload.github.com/JoranHonig/tree-sitter-solidity/tar.gz/b239a95f94cfcc6e7b3e961bc73a28d55e214f02}
+    name: tree-sitter-solidity
+    version: 1.2.0
+    requiresBuild: true
+    dependencies:
+      nan: 2.18.0
+      yarn: 1.22.22
     dev: true
 
   github.com/nkrkv/tree-sitter-rescript/6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a:
