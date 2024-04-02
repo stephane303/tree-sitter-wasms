@@ -47,9 +47,9 @@ fs.mkdirSync(outDir);
 
 process.chdir(outDir);
 
-const grammars = Object.keys(packageInfo.devDependencies).filter(
-  (n) => n.startsWith("tree-sitter-") && n !== "tree-sitter-cli"
-);
+const grammars = Object.keys(packageInfo.devDependencies)
+  .filter((n) => n.startsWith("tree-sitter-") && n !== "tree-sitter-cli")
+  .concat("@tlaplus/tree-sitter-tlaplus");
 
 PromisePool.withConcurrency(os.cpus().length)
   .for(grammars)
