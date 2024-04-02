@@ -106,7 +106,7 @@ devDependencies:
     version: github.com/JoranHonig/tree-sitter-solidity/b239a95f94cfcc6e7b3e961bc73a28d55e214f02
   tree-sitter-swift:
     specifier: ^0.4.0
-    version: 0.4.0
+    version: 0.4.3
   tree-sitter-systemrdl:
     specifier: ^0.7.0
     version: 0.7.0
@@ -1422,8 +1422,8 @@ packages:
       nan: 2.18.0
     dev: true
 
-  /tree-sitter-swift@0.4.0:
-    resolution: {integrity: sha512-Wbul0z6fLSnl+uPhgK+yVK5IbdvugrVnIaRyS2xQ7zaFdExRw1WRvxrXyvurNVqk1VT1AGNFK7A/h1HPwSnIXQ==}
+  /tree-sitter-swift@0.4.3:
+    resolution: {integrity: sha512-UYwtnhaZo0/VIykY/vJlaH5sj+EqLsHkeVSHUNMC+4McdtVpVyNqq96HB4Djvg9QyirwiwErFn9EXc2oyEo8Qw==}
     requiresBuild: true
     dependencies:
       nan: 2.18.0
