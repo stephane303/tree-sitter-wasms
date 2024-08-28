@@ -51,7 +51,9 @@ const grammars = Object.keys(packageInfo.devDependencies)
   .filter((n) => n.startsWith("tree-sitter-") && n !== "tree-sitter-cli")
   .concat("@tlaplus/tree-sitter-tlaplus");
 
-PromisePool.withConcurrency(os.cpus().length)
+  
+
+PromisePool.withConcurrency(2)
   .for(grammars)
   .process(async (name) => {
     if (name == "tree-sitter-rescript") {
