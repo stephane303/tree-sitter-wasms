@@ -93,8 +93,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0
       tree-sitter-rescript:
-        specifier: github:nkrkv/tree-sitter-rescript#6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a
-        version: https://codeload.github.com/nkrkv/tree-sitter-rescript/tar.gz/6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a
+        specifier: https://github.com/nkrkv/tree-sitter-rescript#6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a
+        version: git+https://git@github.com:nkrkv/tree-sitter-rescript.git#6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a
       tree-sitter-ruby:
         specifier: ^0.20.1
         version: 0.20.1
@@ -105,7 +105,7 @@ importers:
         specifier: ^0.19.0
         version: 0.19.0
       tree-sitter-solidity:
-        specifier: github:JoranHonig/tree-sitter-solidity#b239a95f94cfcc6e7b3e961bc73a28d55e214f02
+        specifier: https://github.com/JoranHonig/tree-sitter-solidity#b239a95f94cfcc6e7b3e961bc73a28d55e214f02
         version: https://codeload.github.com/JoranHonig/tree-sitter-solidity/tar.gz/b239a95f94cfcc6e7b3e961bc73a28d55e214f02
       tree-sitter-swift:
         specifier: ^0.4.0
@@ -120,7 +120,7 @@ importers:
         specifier: ^0.20.5
         version: 0.20.5
       tree-sitter-vue:
-        specifier: github:tree-sitter-grammars/tree-sitter-vue#7e48557b903a9db9c38cea3b7839ef7e1f36c693
+        specifier: https://github.com/tree-sitter-grammars/tree-sitter-vue#7e48557b903a9db9c38cea3b7839ef7e1f36c693
         version: https://codeload.github.com/tree-sitter-grammars/tree-sitter-vue/tar.gz/7e48557b903a9db9c38cea3b7839ef7e1f36c693
       tree-sitter-yaml:
         specifier: ^0.5.0
@@ -830,8 +830,8 @@ packages:
   tree-sitter-ql@1.0.0:
     resolution: {integrity: sha512-szoPLBjGhtjaEBCJBB6BM5IX5ypYF9U1S6HT6QDS5MJs1jwxS8tVqk2HJOIo5SChZR6Tgt+kiHJARzL07Jc6Lg==}
 
-  tree-sitter-rescript@https://codeload.github.com/nkrkv/tree-sitter-rescript/tar.gz/6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a:
-    resolution: {tarball: https://codeload.github.com/nkrkv/tree-sitter-rescript/tar.gz/6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a}
+  tree-sitter-rescript@git+https://git@github.com:nkrkv/tree-sitter-rescript.git#6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a:
+    resolution: {commit: 6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a, repo: git@github.com:nkrkv/tree-sitter-rescript.git, type: git}
     version: 1.2.0
 
   tree-sitter-ruby@0.20.1:
@@ -1687,7 +1687,7 @@ snapshots:
     dependencies:
       nan: 2.18.0
 
-  tree-sitter-rescript@https://codeload.github.com/nkrkv/tree-sitter-rescript/tar.gz/6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a:
+  tree-sitter-rescript@git+https://git@github.com:nkrkv/tree-sitter-rescript.git#6376fa028f31aa4e26ca2c8f007e322cd2a5eb4a:
     dependencies:
       nan: 2.18.0
 
