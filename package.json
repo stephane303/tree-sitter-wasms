@@ -46,7 +46,7 @@
     "@tlaplus/tree-sitter-tlaplus": "^1.2.4",
     "tree-sitter-toml": "^0.5.1",
     "tree-sitter-typescript": "^0.20.5",
-    "tree-sitter-vue": "^0.2.1",
+    "tree-sitter-vue": "github:tree-sitter-grammars/tree-sitter-vue#7e48557b903a9db9c38cea3b7839ef7e1f36c693",
     "tree-sitter-yaml": "^0.5.0",
     "ts-node": "^10.9.2",
     "typescript": "5.3.3"
