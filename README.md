@@ -1,5 +1,5 @@
 # tree-sitter-wasms
-Prebuilt WASM binaries for tree-sitter's language parsers. Forked from https://github.com/Menci/tree-sitter-wasm-prebuilt because I wanted to use GitHub Actions to automate publishing.
+Prebuilt WASM binaries for tree-sitter's language parsers. Forked from [https://github.com/Menci/tree-sitter-wasm-prebuilt](https://github.com/Gregoor/tree-sitter-wasms) because I needed a working version of tree-sitter-vue
 
 ## Installation
 
