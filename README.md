@@ -20,4 +20,4 @@ parser.setLanguage(treeSitterCpp);
 
 ## Supported Languages
 
-Check https://unpkg.com/browse/@stephan303/tree-sitter-wasms@latest/out/ to see all supported languages, and manually download the wasm artifacts directly.
+Check https://unpkg.com/browse/@stephane303/tree-sitter-wasms@latest/out/ to see all supported languages, and manually download the wasm artifacts directly.
