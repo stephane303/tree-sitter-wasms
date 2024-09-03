@@ -1,6 +1,6 @@
 {
   "name": "@stephane303/tree-sitter-wasms",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Prebuilt WASM binaries for tree-sitter's language parsers.",
   "repository": "https://github.com/stephane303/tree-sitter-wasms",
   "author": "Gregor <gregorwbr@gmail.com>, Menci <huanghaorui301@gmail.com>",
