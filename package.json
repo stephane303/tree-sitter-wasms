@@ -3,7 +3,7 @@
   "version": "0.1",
   "description": "Prebuilt WASM binaries for tree-sitter's language parsers.",
   "repository": "https://github.com/stephane303/tree-sitter-wasms",
-  "author": "Gregor <gregorwbr@gmail.com>, Menci <huanghaorui301@gmail.com>"
+  "author": "Gregor <gregorwbr@gmail.com>, Menci <huanghaorui301@gmail.com>",
   "license": "Unlicense",
   "scripts": {
     "build": "ts-node build.ts"
